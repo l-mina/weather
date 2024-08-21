@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form id="search">
+        <label for="zipcode"><b>ZIP Code:</b></label>
+        <input type="number" id="zipcode" minlength="5" required="required"/>
+        <label class="switch">
+            <span class="far">&deg;F</span><span class="cel">&deg;C</span>
+            <input type="checkbox" id="degrees">
+            <span class="slider round"></span>
+          </label>
+        <button type="button" id="searchBtn">Search</button>
+    </form>
+    <div id="temp"></div>
+    <div id="content">
+
+    </div>
+    
+</body>
+</html>

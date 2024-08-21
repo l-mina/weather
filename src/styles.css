@@ -1,0 +1,157 @@
+body {
+    background-color: cadetblue;
+    font-family: sans-serif;
+    margin: 0 10%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+form {
+    display: flex;
+    gap: 1%;
+}
+
+form button {
+    background-color: coral;
+    border-style: none;
+    font-weight: bold;
+    color:white;
+    border-radius: 25px;
+    width: 80px;
+}
+
+form button:hover{
+    scale:1.01;
+    color:black;
+}
+label [for='zipcode'] {
+    margin-top: 5px;
+    margin-right: -5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: -1;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 40px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 25px;
+  }
+  
+  .slider.round:before {
+    border-radius: 25px;
+  }
+  
+  .far {
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    z-index: -1;
+    font-weight: bold;
+  }
+
+  .cel {
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 180px;
+    background-color: coral;
+    padding: 1%;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid gray;
+  }
+
+  .conditions-des {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-left: 10%;
+  }
+
+  .line {
+    width: 120px;
+    margin-left: 10%;
+    height: 2px;
+    background-color:black;
+  }
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 3%;
+}
